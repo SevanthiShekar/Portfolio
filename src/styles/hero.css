@@ -1,0 +1,104 @@
+.me_polo img {
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 25px;
+    border: 2px solid lightgray;
+    box-shadow: 2px 2px 5px lightgray;
+}
+.me_polo {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+    box-shadow: 5px 5px 5px lightgray;
+    transform: rotateZ(-5deg);
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: -80px;
+}
+.me_polo p {
+    margin: 15px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.hero {
+    display: flex;
+    align-items: center;
+}
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px dashed lightgray;
+    box-shadow: 5px 5px 5px lightgray;
+    height: 225px;
+    width: 375px;
+    padding: 20px 30px;
+}
+.content h2{
+    font-size: 30px;
+    margin-bottom: -20px;
+}
+.content h1{
+    font-size: 40px;
+}
+.buttons button{
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.25s ease-in;
+}
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.buttons .view{
+    background-color: #ff97c4;
+}
+.buttons .download{
+    background-color: #cea8f9;
+}
+.buttons .view:hover{
+    background-color: #fcb2d2;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px lightgray;
+}
+.buttons .download:hover{
+    background-color: #d7b6fc;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px lightgray;
+}
+.hero .drw1{
+    position: relative;
+    height: 180px;
+    width: 130px;
+    top: 220px;
+    left: 275px;
+}
+.hero .drw2{
+    position: relative;
+    height: 200px;
+    width: 150px;
+    top: -100px;
+    left: -70px;
+}
+.w_y{
+    height: 45px;
+    width: 150px;
+    position: relative;
+    top: -35px;
+    left: 125px;
+    margin-bottom: -50px;
+}
+.content p{
+    margin-top: -10px;
+}

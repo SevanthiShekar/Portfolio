@@ -1,0 +1,65 @@
+.ach_pro{
+    display: flex;
+}
+.ach_pro_dev{
+    margin-left: 50px;
+}
+.ach_pro li{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.achievements, .certifications, .workshops{
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px dashed lightgray;
+    box-shadow: 5px 5px 5px lightgray;
+    padding: 20px 50px;
+    text-align: justify;
+}
+.achievements h2, .certifications h2, .workshops h2{
+    margin-top: -30px;
+}
+.achievements .washi, .certifications .washi, .workshops .washi
+{
+    position: relative;
+    height: 35px;
+    width: 150px;
+}
+.achievements li::marker{
+    content: "🏆 "
+} 
+.certifications li::marker{
+    content: "⚙️ "
+}
+.workshops li::marker{
+    content: "🖥️ "
+}
+.achievements .washi, .certifications .washi{
+    top: -40px;
+    left: 80px;
+}
+.workshops .washi{
+    top: -40px;
+    left: 80px;
+}
+.achievements{
+    margin-right: 20px;
+    height: fit-content;
+}
+.certifications{
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.drawing15{
+    height: 150px;
+    width: 150px;
+}
+.drawing16{
+    height: 175px;
+    width: 150px;
+    margin-top: 5px;
+    margin-left: 225px;
+    transform: rotateY(180deg);
+    margin-bottom: -10px;
+}

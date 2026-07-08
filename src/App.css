@@ -1,0 +1,93 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #FFF9FB;
+  background-image:
+    radial-gradient(#EADCF8 2px, transparent 1px);
+  background-size: 20px 20px;
+  margin: 0px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+main {
+  margin-left: 225px;
+  height: 100vh;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+section {
+  width: calc(100vw - 225px);
+  height: 96vh;
+  flex-shrink: 0;
+}
+
+.arrow1,
+.arrow4 {
+  height: 200px;
+  width: 250px;
+  position: relative;
+  top: 350px;
+  left: -150px;
+  transform: rotateZ(15deg);
+}
+
+.arrow2 {
+  height: 200px;
+  width: 250px;
+  position: relative;
+  top: 0px;
+  left: -250px;
+  transform: rotateX(180deg) rotateZ(70deg);
+}
+
+.arrow3 {
+  height: 200px;
+  width: 250px;
+  position: relative;
+  top: 150px;
+  left: -275px;
+  transform: rotateX(180deg) rotateZ(180deg) rotateY(180deg);
+}
+
+.drawing7 {
+  height: 200px;
+  width: 300px;
+  position: relative;
+  left: -375px;
+  top: 100px;
+}
+.arrow4 {
+  left: -550px;
+  top: 250px;
+}
+.arrow5 {
+  height: 200px;
+  width: 300px;
+  position: relative;
+  top: 250px;
+  transform: rotateZ(-10deg);
+  margin-right: -20px;
+}
+.arrow6 {
+  height: 200px;
+  width: 300px;
+  position: relative;
+  top: 175px;
+  transform: rotateZ(90deg);
+  margin-left: -60px;
+}

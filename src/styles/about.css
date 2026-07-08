@@ -1,0 +1,49 @@
+.about_card, .focus_card{
+    height: fit-content;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px dashed lightgray;
+    box-shadow: 5px 5px 5px lightgray;
+    padding: 10px 30px;
+}
+.about_card p{
+    text-align: justify;
+}
+.about_section{
+    display: flex;
+    margin-left: -250px;
+    margin-top: 60px;
+}
+.about_card .drw3{
+    margin-left: 200px;
+}
+.focus_card{
+    display: flex;
+    gap: 40px;
+    margin-top: 150px;
+    margin-left: -120px;
+}
+.focus_card p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.focus_card .drw4{
+    height: 200px;
+    width: 100px;
+    margin-top: 50px;
+}
+.about_washi{
+    height: 45px;
+    width: 150px;
+    position: relative;
+}
+.tape1{
+    top: -25px;
+    left: 325px;
+}
+.tape2{
+    top: 125px;
+    left: 180px;
+}

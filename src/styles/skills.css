@@ -1,0 +1,76 @@
+.board img{
+    height: 80px;
+    width: 80px;
+}
+.board{
+    width: 800px;
+    height: 90vh;
+    background-color: rgb(252, 212, 164);
+    border: 2px solid gray;
+    background-image:
+    radial-gradient(#66646750 2px, transparent 1px);
+    background-size: 15px 15px;
+    margin-left: -225px;
+    margin-top: 10px;
+}
+.board h1{
+    text-align: center;
+    padding: 5px 0;
+    background-color: rgb(249, 243, 243);
+    border: 2px dashed lightcoral;
+    margin-bottom: -10px;
+}
+.board .row1{
+    display: flex;
+}
+.board .row2{
+    display: flex;
+    border-top: 3px dashed gray;
+}
+.board .languages img{
+    height: 80px;
+    width: 70px;
+}
+.languages h2, .frontend h2, .ml h2, .backend h2, .tools h2,.databases h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.languages, .frontend, .ml{
+    width: 300px;
+    padding: 10px 20px;
+    text-align: center;
+}
+.backend, .tools,.databases{
+    width: 200px;
+    padding: 10px 15px;
+    text-align: center;
+}
+.board .frontend img{
+    height: 80px;
+    width: 70px;
+}
+.board .frontend img:last-child{
+    width: 150px;
+    height: 50px;
+}
+.board .backend img{
+    height: 60px;
+    width: 120px;
+}
+.board .databases img{
+    height: 60px;
+    width: 120px;
+}
+.board .ml img{
+    height: 50px;
+    width: 120px;
+    margin-right: 20px;
+}
+.board .tools img{
+    height: 60px;
+    width: 120px;
+}
+.board .tools img:last-child{
+    width: 80px;
+    height: 80px;
+}
