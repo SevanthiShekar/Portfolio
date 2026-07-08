@@ -77,6 +77,9 @@
     font-weight: bold;
     box-shadow: 2px 2px 5px lightgray;
 }
+.download_link{
+    text-decoration: none;
+}
 .hero .drw1{
     position: relative;
     height: 180px;

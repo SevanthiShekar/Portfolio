@@ -19,22 +19,24 @@ const Hero = () => {
         <>
             <div className='hero'>
                 <div className='me_polo'>
-                    <img src={me}/>
+                    <img src={me} />
                     <p>Learning, building, and creating technology that makes a difference.</p>
                 </div>
-                <img src={p1} className='drw1'/>
+                <img src={p1} className='drw1' />
                 <div className='content'>
-                    <img src={w1} className='w_y'/>
+                    <img src={w1} className='w_y' />
                     <h2>Hi! I'm</h2>
                     <h1>SEVANTHI SHEKAR</h1>
                     <p>FullStack Developer</p>
                     <p>Machine Learning Enthusiast</p>
                     <div className='buttons'>
-                        <button className='view' onClick={() => scrollToSection("projects")}>View Projects <ArrowForwardIcon/></button>
-                        <button className='download'>Download Resume <DownloadIcon/></button>
+                        <button className='view' onClick={() => scrollToSection("projects")}>View Projects <ArrowForwardIcon /></button>
+                        <a href="/SevanthiShekar_Resume.pdf" download className="download_link">
+                            <button className='download'>Download Resume <DownloadIcon /></button>
+                        </a>
                     </div>
                 </div>
-                <img src={p2} className='drw2'/>
+                <img src={p2} className='drw2' />
             </div>
         </>
     )
