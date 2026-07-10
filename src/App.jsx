@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import About from "./components/About"
@@ -15,25 +15,104 @@ import './App.css'
 function App() {
   const mainRef = useRef(null);
 
-  const handleWheel = (e) => {
+  useEffect(() => {
+    const main = mainRef.current;
 
-    //Don't scroll horizontally for mobile screens
-    if (window.innerWidth <= 768) return;
+    if (!main) return;
 
-    e.preventDefault();
+    const handleWheel = (e) => {
+      // Allow normal scrolling on mobile
+      if (window.innerWidth <= 768) return;
 
-    mainRef.current.scrollBy({
-      left: e.deltaY * 3 + e.deltaX,
-      behavior: "smooth",
-    });
-  };
+      e.preventDefault();
+
+      main.scrollBy({
+        left: e.deltaY * 3 + e.deltaX,
+        behavior: "smooth",
+      });
+    };
+
+    main.addEventListener("wheel", handleWheel, { passive: false });
+
+    return () => {
+      main.removeEventListener("wheel", handleWheel);
+    };
+  }, []);
+
+  // Horizontal scrolling with keyboard
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (window.innerWidth <= 768) return;
+
+      const main = mainRef.current;
+      if (!main) return;
+
+      let scrollAmount;
+
+      switch (e.key) {
+        case "ArrowDown":
+        case "ArrowRight":
+          scrollAmount = window.innerWidth * 0.3;
+          break;
+
+        case "ArrowUp":
+        case "ArrowLeft":
+          scrollAmount = -window.innerWidth * 0.3;
+          break;
+
+        case "PageDown":
+          scrollAmount = window.innerWidth * 0.8;
+          break;
+
+        case "PageUp":
+          scrollAmount = -window.innerWidth * 0.8;
+          break;
+
+        case "Home":
+          e.preventDefault();
+          main.scrollTo({
+            left: 0,
+            behavior: "smooth",
+          });
+          return;
+
+        case "End":
+          e.preventDefault();
+          main.scrollTo({
+            left: main.scrollWidth,
+            behavior: "smooth",
+          });
+          return;
+
+        default:
+            if (e.code === "Space") {
+            scrollAmount = window.innerWidth * 0.8;
+            break;
+          }
+          return;
+      }
+
+      e.preventDefault();
+
+      main.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   return (
     <div>
       <div className="navbar">
         <Navbar/>
       </div>
-      <main ref={mainRef} onWheel={handleWheel}>
+      <main ref={mainRef}>
         <div id="hero"></div>
         <section><Hero/></section>
         <img src={arrow} className="arrow1"/>
