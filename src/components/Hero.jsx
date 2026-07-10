@@ -27,8 +27,8 @@ const Hero = () => {
                     <img src={w1} className='w_y' />
                     <h2>Hi! I'm</h2>
                     <h1>SEVANTHI SHEKAR</h1>
-                    <p>FullStack Developer</p>
-                    <p>Machine Learning Enthusiast</p>
+                    <p>Software Engineer</p>
+                    <p>Full-Stack • Machine Learning</p>
                     <div className='buttons'>
                         <button className='view' onClick={() => scrollToSection("projects_anchor")}>View Projects <ArrowForwardIcon /></button>
                         <a href="/SevanthiShekar_Resume.pdf" download className="download_link">
