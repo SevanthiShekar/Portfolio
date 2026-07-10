@@ -6,6 +6,7 @@ import p3 from "../assets/p3.png"
 import p5 from "../assets/p5.png"
 // import p6 from "../assets/p6.png"
 import pin from "../assets/pin.png"
+import live from "../assets/live.png"
 
 const Projects = () => {
 
@@ -73,14 +74,22 @@ const Projects = () => {
 
     const cards = projects.map((project) => {
         return (
+        <a href={project.live? project.live : project.github} target="_blank" rel="noopener noreferrer" className='card_link'>
             <div key={project.id} className='project_card'>
                 <img src={pin} className='pin' />
                 <img src={project.image}></img>
                 <h1>{project.title}</h1>
                 <h2>{project.subtitle}</h2>
                 <div className='links'>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer"><GitHubIcon sx={{ fontSize: 28 }} style={{ color: "black" }} /></a>
-                    {project.live ? <a href={project.live} target="_blank" rel="noopener noreferrer"><p>Live Demo</p></a> : <></>}
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <GitHubIcon sx={{ fontSize: 28 }} style={{ color: "black" }} />
+                        <p className='repo'>Repo</p>
+                    </a>
+                    {project.live ? 
+                        <a href={project.live} target="_blank" rel="noopener noreferrer">
+                            <img src={live} className='live'/>
+                            <p className='live_link'>Live Demo</p>
+                        </a> : <></>}
                 </div>
                 <p>{project.description}</p>
                 {project.tags.map((tag, index) => {
@@ -91,6 +100,7 @@ const Projects = () => {
                             className='tags'></Chip>)
                 })}
             </div>
+        </a>
         )
     })
 

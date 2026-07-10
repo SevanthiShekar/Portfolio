@@ -2,7 +2,6 @@
     display: flex;
     margin-top: -10px;
 }
-
 .project_card img {
     height: 175px;
     width: 350px;
@@ -10,7 +9,6 @@
     box-shadow: 2px 2px 5px lightgray;
     margin-top: -10px;
 }
-
 .project_card {
     width: 350px;
     height: 440px;
@@ -21,52 +19,58 @@
     background-color: white;
     transform: rotateZ(-3deg);
 }
-
 .project_card h1 {
     font-size: 20px;
     text-align: center;
 }
-
 .project_card h2 {
     font-size: 15px;
 }
-
 .project_card p {
     font-size: 13px;
 }
-
 .tags {
     font-size: 10px;
     margin-right: 5px;
     margin-bottom: 5px;
     font-weight: bold;
 }
-
 .project_card .description {
     display: flex;
 }
-
 .projects {
     margin-left: -200px;
 }
-
 .project_card .links {
     display: flex;
     margin: -10px 0;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
 }
-
 .links p {
     font-size: 14px;
     font-weight: bolder;
-    animation: shine 1s linear infinite alternate;
 }
-
 .links a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-
+.links .live{
+    height: 20px;
+    width: 20px;
+    border:none;
+    box-shadow: none;
+    margin: 0;
+}
+.live_link{
+    animation: shine 1s linear infinite alternate;
+}
+.repo{
+    color: black;
+    animation: none;
+}
 .project_card .pin {
     height: 30px;
     width: 30px;
@@ -76,6 +80,10 @@
     position: relative;
     top: -15px;
     left: 150px;
+}
+.card_link{
+    text-decoration: none;
+    color: black;
 }
 
 @keyframes shine {
