@@ -38,9 +38,9 @@ const Experience = () => {
         },
     ];
 
-    const exp_cards = experiences.map((exp) => {
+    const exp_cards = experiences.map((exp, index) => {
         return (
-            <div className="exp_card">
+            <div className="exp_card" key={index}>
                 <img src={paperclip} className="paperclip"/>
                 <div className="exp_des">
                     <div>
@@ -58,7 +58,7 @@ const Experience = () => {
 
     return (
         <div className="experience">
-            <h1>Experience</h1>
+            <h1 id="experience_anchor">Experience</h1>
             <div className="exp_cards">
                 {exp_cards}
             </div>

@@ -74,3 +74,68 @@
     width: 80px;
     height: 80px;
 }
+
+@media (max-width:768px){
+    .board{
+        width: calc(100% - 40px);
+        height: auto;
+        margin: -200px 20px 0px 20px;
+        box-sizing: border-box;
+    }
+    .board .row1,
+    .board .row2{
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+    .languages,
+    .frontend,
+    .backend,
+    .databases,
+    .ml,
+    .tools{
+        width: auto;
+        padding: 20px;
+        border-bottom: 2px dashed gray;
+    }
+    .tools{
+        border-bottom: none;
+    }
+    .languages h2,
+    .frontend h2,
+    .backend h2,
+    .databases h2,
+    .ml h2,
+    .tools h2{
+        margin-bottom: 10px;
+    }
+
+    .languages,
+    .frontend,
+    .backend,
+    .databases,
+    .ml,
+    .tools{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .languages h2,
+    .frontend h2,
+    .backend h2,
+    .databases h2,
+    .ml h2,
+    .tools h2{
+        width: 100%;
+    }
+
+    .board img{
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+        margin: 0;
+    }
+
+}

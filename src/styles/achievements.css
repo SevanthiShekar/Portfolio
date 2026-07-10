@@ -63,3 +63,69 @@
     transform: rotateY(180deg);
     margin-bottom: -10px;
 }
+
+@media (max-width: 768px){
+
+    .ach_pro_dev{
+        margin-left: 0;
+        margin-top: 60px;
+        padding: 0 20px;
+    }
+    .ach_pro_dev > h1{
+        text-align: center !important;
+        margin-bottom: 35px !important;
+    }
+    .ach_pro{
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+    .achievements,
+    .certifications,
+    .workshops{
+        width: 100%;
+        max-width: 340px;
+        padding: 20px 45px;
+        box-sizing: border-box;
+    }
+    .achievements{
+        margin-right: 0;
+    }
+    .certifications{
+        margin: 0 0 35px 0;
+    }
+    .workshops{
+        margin: 0;
+    }
+    .ach_pro li{
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .achievements .washi,
+    .certifications .washi,
+    .workshops .washi{
+        width: 120px;
+        height: 30px;
+        top: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .achievements h2,
+    .certifications h2,
+    .workshops h2{
+        margin-top: -25px;
+        text-align: center;
+        font-size: 22px;
+    }
+    .drawing16{
+        display: block;
+        width: 120px;
+        height: auto;
+        margin: 20px auto 0;
+        transform: rotateY(180deg);
+    }
+    .drawing15{
+        width: 120px;
+        height: auto;
+    }
+}

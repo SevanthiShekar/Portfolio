@@ -14,6 +14,8 @@
 .op_card img{
     height: 150px;
     width: 225px;
+    border: 2px solid lightgray;
+    box-shadow: 2px 2px 5px lightgray;
 }
 .op_card .links{
     display: flex;
@@ -56,4 +58,59 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .op{
+        margin: 0px;
+        padding: 0 20px;
+    }
+    .op > h1{
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 270px;
+    }
+    .op .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .op_cards{
+        width: 100%;
+    }
+    .op_card{
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .op_card img{
+        width: 100%;
+        height: 200px;
+        max-width: 320px;
+    }
+    .op_card h1{
+        margin-top: -10px;
+        margin-bottom: -30px;
+        font-size: 22px;
+    }
+    .op_card h2{
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    .op_card p{
+        text-align: left;
+    }
+    .op_card .links{
+        justify-content: center;
+        margin-top: -10px;
+    }
+    .op .drw6{
+        height: 225px;
+        width: 175px;
+        position: relative;
+        top: -1405px;
+    }
 }

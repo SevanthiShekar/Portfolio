@@ -37,7 +37,7 @@ const Contact = () => {
 
     const polo_cards = polos.map((p) => {
         return(
-        <div className="polo">
+        <div className="polo" key={p.id}>
             <img src={p.image}/>
             <p>{p.name}</p>
         </div>)
@@ -45,8 +45,8 @@ const Contact = () => {
 
     return(
        <>
-        <h1 style={{textAlign: "center"}}>Beyond Coding</h1>
-        <div className="extra">
+        <h1 className="beyond">Beyond Coding</h1>
+        <div className="extra" id="contact_anchor">
             <div className="hobbies">
                 <div className="polos">
                     {polo_cards}

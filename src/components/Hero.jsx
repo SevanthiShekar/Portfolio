@@ -18,7 +18,7 @@ const Hero = () => {
     return (
         <>
             <div className='hero'>
-                <div className='me_polo'>
+                <div className='me_polo' id="hero_anchor">
                     <img src={me} />
                     <p>Learning, building, and creating technology that makes a difference.</p>
                 </div>

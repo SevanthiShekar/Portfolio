@@ -26,7 +26,7 @@ const Skills = () => {
     return (<>
         <div className="board">
             <h1>Skills</h1>
-            <div>
+            <div id="skills_anchor">
                 <div className="row1">
                     <div className="languages">
                         <h2>Languages</h2>

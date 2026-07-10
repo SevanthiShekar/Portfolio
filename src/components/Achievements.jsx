@@ -8,7 +8,7 @@ const Achievements = () => {
     return(
         <div className="ach_pro_dev">
             <h1 style={{marginBottom: "25px", textAlign: "center"}}>Achievements & Professional Development</h1>
-            <div className="ach_pro">
+            <div className="ach_pro" id="achievements_anchor">
                     <div className="achievements">
                         <img src={w3} className="washi"/>
                         <h2>ACHIEVEMENTS</h2>
@@ -16,7 +16,6 @@ const Achievements = () => {
                             involving frontend development, DSA, and technical interviews.</li>
                         <li>Advanced to Round 2 of 3 in Tech Tonic, a DSA-focused programming contest.</li>
                         <li>HackerRank - Java (Silver Badge)</li>
-                        <li>Solved 35+ coding problems on LeetCode and HackerRank covering DSA and SQL.</li>
                         <img src={drw16} className="drawing16"/>
                     </div>
                 <div>

@@ -85,7 +85,7 @@ const Projects = () => {
                 <p>{project.description}</p>
                 {project.tags.map((tag, index) => {
                     return (
-                        <Chip
+                        <Chip key={tag}
                             label={tag} variant='outlined'
                             color={colors[index % colors.length]}
                             className='tags'></Chip>)
@@ -97,7 +97,7 @@ const Projects = () => {
     return (
         <div className="projects">
             <h1>Featured Projects</h1>
-            <div className='project_cards'>
+            <div className='project_cards' id="projects_anchor">
                 {cards}
             </div>
         </div>

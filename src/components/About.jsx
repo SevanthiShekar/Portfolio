@@ -9,7 +9,7 @@ const About = () => {
     return(
         <div className="about_section">
             <img src={w3} className="about_washi tape1"/>
-            <div className="about_card">
+            <div className="about_card" id="about_anchor">
                 <h1>About Me</h1>
                 <p>I'm a Computer Science student who enjoys building projects from the ground up. 
                    Each one helps me strengthen my skills while solving problems that matter to me.</p>

@@ -16,10 +16,14 @@ function App() {
   const mainRef = useRef(null);
 
   const handleWheel = (e) => {
+
+    //Don't scroll horizontally for mobile screens
+    if (window.innerWidth <= 768) return;
+
     e.preventDefault();
 
     mainRef.current.scrollBy({
-      left: e.deltaY * 4 + e.deltaX,
+      left: e.deltaY * 3 + e.deltaX,
       behavior: "smooth",
     });
   };
@@ -30,21 +34,28 @@ function App() {
         <Navbar/>
       </div>
       <main ref={mainRef} onWheel={handleWheel}>
-        <section id="hero"><Hero/></section>
-        <img src={arrow} className="arrow1" id="about"/>
+        <div id="hero"></div>
+        <section><Hero/></section>
+        <img src={arrow} className="arrow1"/>
+        <div id="about"></div>
         <section><About/></section>
-        <img src={arrow} className="arrow2" id="projects"/>
+        <img src={arrow} className="arrow2"/>
+        <div id="projects"></div>
         <section><Projects/></section>
         <section><OtherProjects/></section>
-        <img src={arrow} className="arrow3" id="skills"/>
+        <img src={arrow} className="arrow3"/>
+        <div id="skills"></div>
         <section><Skills/></section>
         <img src={drw7} className="drawing7"/>
-        <img src={arrow} className="arrow4" id="experience"/>
+        <img src={arrow} className="arrow4"/>
+        <div id="experience"></div>
         <section><Experience/></section>
         <img src={arrow} className="arrow5"/>
-        <section id="achievements"><Achievements/></section>
+        <div id="achievements"></div>
+        <section><Achievements/></section>
         <img src={arrow} className="arrow6"/>
-        <section id="contact"><Contact/></section>
+        <div id="contact"></div>
+        <section><Contact/></section>
       </main>
     </div>
   )
