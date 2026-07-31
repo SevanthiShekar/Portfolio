@@ -77,7 +77,7 @@ const Projects = () => {
         <a href={project.live? project.live : project.github} target="_blank" rel="noopener noreferrer" className='card_link'>
             <div key={project.id} className='project_card'>
                 <img src={pin} className='pin' />
-                <img src={project.image}></img>
+                <img src={project.image} className='project_img'></img>
                 <h1>{project.title}</h1>
                 <h2>{project.subtitle}</h2>
                 <div className='links'>

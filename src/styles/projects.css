@@ -156,7 +156,7 @@
         transform: rotate(0deg);
     }
 
-    .project_card img:not(.pin) {
+    .project_card .project_img {
         width: 100%;
         height: 200px;
         box-sizing: border-box;
@@ -198,7 +198,7 @@
     }
 
     .links .live {
-        height: 5px;
-        width: 5px;
+        height: 15px;
+        width: 15px;
     }
 }
