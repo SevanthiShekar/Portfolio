@@ -26,10 +26,15 @@ function App() {
 
       e.preventDefault();
 
-      main.scrollBy({
-        left: e.deltaY * 3 + e.deltaX,
-        behavior: "smooth",
-      });
+      const isTrackpad = Math.abs(e.deltaY) < 50;
+
+       if (isTrackpad) {
+        // Trackpad: preserve the small, smooth movements
+        main.scrollLeft += e.deltaY * 100 + e.deltaX;
+      } else {
+        // Mouse wheel: amplify the larger wheel steps
+        main.scrollLeft += e.deltaY * 3 + e.deltaX;
+      }
     };
 
     main.addEventListener("wheel", handleWheel, { passive: false });
