@@ -31,7 +31,7 @@ const Hero = () => {
                     <p>Full-Stack • Machine Learning</p>
                     <div className='buttons'>
                         <button className='view' onClick={() => scrollToSection("projects_anchor")}>View Projects <ArrowForwardIcon /></button>
-                        <a href="/SevanthiShekar_Resume.pdf" download className="download_link">
+                        <a href="/SevanthiShekar_Resume_Downloaded.pdf" download className="download_link">
                             <button className='download'>Download Resume <DownloadIcon /></button>
                         </a>
                     </div>

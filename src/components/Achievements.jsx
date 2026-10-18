@@ -12,6 +12,7 @@ const Achievements = () => {
                     <div className="achievements">
                         <img src={w3} className="washi"/>
                         <h2>ACHIEVEMENTS</h2>
+                        <li>CGPA: 9.83 / 10</li>
                         <li>Ranked 3rd in a technical competition 
                             involving frontend development, DSA, and technical interviews.</li>
                         <li>Advanced to Round 2 of 3 in Tech Tonic, a DSA-focused programming contest.</li>
